@@ -1,0 +1,20 @@
+smooth scrolling
+    attach loco scroll css
+    attach loco scroll min js
+    some code form loco githubfor js
+
+gsap
+    attach gsap (have to study gsap)
+scrolltrigger
+
+
+learn querySelector
+
+    elem.addEventListener("mouseleave", function(dets){
+        var img = elem.querySelector("img");
+        gsap.to(img, {
+            opacity: 0,
+            ease: Power3,
+            duration: 0.5,
+        });
+    });
