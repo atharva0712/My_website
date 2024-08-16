@@ -20,14 +20,14 @@ html,body{
 #main{
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #17153B;
 }
 
 #home{
     color: #fff;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #17153B;
     position: relative;
 }
 
@@ -55,7 +55,7 @@ html,body{
 }
 
 .bounding .boundingelem{
-    transform: translateY(00%);
+    transform: translateY(30%);
     margin-bottom: 10px;
 }
 
@@ -126,12 +126,12 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    background-color: #17153B;
     color: black;
 }
 
 #second{
-    background-color: black;
+    background-color: #17153B;
     padding-top: 100px;
     width: 100%;
     height: 120vh;
@@ -150,6 +150,7 @@ html,body{
     text-transform: uppercase;
     opacity: 60%;
     padding: 30px;
+    color: #fff;
     
 }
 .elemlast{
@@ -165,7 +166,7 @@ html,body{
 
 #about{
     width: 100%;
-    background-color: black;
+    background-color: #17153B;
     padding: 6vw 10vw;
     display: flex;
     align-items: center;
