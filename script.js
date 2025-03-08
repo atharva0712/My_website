@@ -14,7 +14,7 @@ function firstPageAnim(){
         duration: 0.5,
     })
     .from(".boundingelem", {
-        y: "150",
+        y: "100%",
         ease: Expo.easeInOut,
         duration: 1.8,
         delay: -1,
@@ -43,6 +43,22 @@ function mouseAndCircleDistort() {
         yprev = dets.clientY;
     });
 }
+// Function to update India time
+function updateIndiaTime() {
+    const options = {
+        timeZone: 'Asia/Kolkata',
+        hour12: true,
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+    };
+    
+    const indianTime = new Date().toLocaleTimeString('en-US', options);
+    document.getElementById('india-time').textContent = indianTime + ' IST';
+}
+
+updateIndiaTime();
+setInterval(updateIndiaTime, 1000);
 
 mouseAndCircleDistort();
 firstPageAnim();
