@@ -247,7 +247,6 @@ html,body{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Create different gradient variations for visual diversity */
 .skill-button:nth-child(3n+1) {
     background: linear-gradient(45deg, #667eea, #764ba2);
 }
@@ -260,7 +259,6 @@ html,body{
     background: linear-gradient(45deg, #f83600, #f9d423);
 }
 
-/* Hover effect */
 .skill-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
