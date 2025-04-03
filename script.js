@@ -1,3 +1,23 @@
+function isMobileDevice() {
+    return (window.innerWidth <= 768 || 
+            navigator.maxTouchPoints > 0 || 
+            navigator.msMaxTouchPoints > 0 ||
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+}
+
+function handleMobileRedirect() {
+    if (isMobileDevice()) {
+        document.getElementById('mobile-message').style.display = 'flex';
+        document.getElementById('main').style.display = 'none';
+    } else {
+        document.getElementById('mobile-message').style.display = 'none';
+        document.getElementById('main').style.display = 'block';
+    }
+}
+
+window.addEventListener('load', handleMobileRedirect);
+window.addEventListener('resize', handleMobileRedirect);
+
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
